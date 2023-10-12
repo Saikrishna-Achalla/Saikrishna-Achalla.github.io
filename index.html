@@ -1,87 +1,169 @@
+
+
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Saikrishna Achalla</title>
-  <meta name="description" content="Personal site for Saikrishna Achalla">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-  >
-  <link rel="stylesheet" href="https://Saikrishna-Achalla.github.io/styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikrishna Achalla</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .social-icons {
+             display: flex;
+             flex-direction: column;
+             gap: 1em;
+             font-size: 1em;
+             line-height: 1.5;
+         }
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+         /* Github and Linkedin Links */
+         .social-icons a {
+             color: #fff;
+             text-decoration: none;
+             display: flex;
+             align-items: center;
+         }
+         .social-icons i {
+             margin-right: 0.5em;
+             width: 20px;
+             height: 20px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border: 1px solid #fff;
+             border-radius: 4px;
+         }
+
+        /* All the text and Body color */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #808080;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 40px;
+            padding: 40px;
+        }
+
+        .left-column {
+            text-align: center;
+            max-width: 200px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .profile-image {
+            display: block;
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .left-column h1 {
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: 300;
+
+        }
+
+        .right-column {
+            font-size: 14px;
+            max-width: 600px;
+            margin-left: 10px;
+        }
+
+        .right-column h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .right-column p, .right-column ol, .right-column ul {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #333;
+            font-size: 14px;
+            grid-column: 1 / -1;
+        }
+    </style>
 </head>
-
 <body>
-  <div id="container">
-    <div class="greeting-container">
-      <img src="me.png" alt="Saikrishna Achalla" class="avatar" />
-      <h1 class="global-title">Saikrishna Achalla</h1>
-    </div>
-    
-    <nav class="default">
-      <ul>
-        
-        <li>
-          
-          
-          <a href="https://Saikrishna-Achalla.github.io/projects">
-          
-            Projects
-          </a>
-        </li>
-        
-        <li>
-          
-          
-          <a href="https://Saikrishna-Achalla.github.io/coursework">
-          
-            Coursework
-          </a>
-        </li>
+    <div class="container">
+        <div class="left-column">
+            <img src="me.png" alt="Dr. John Doe" class="profile-image">
+            <h1>Saikrishna Achalla</h1>
+            <p>saikrishna.achalla@berkeley.edu<br>
 
-        <li>
-          
-          
-          <a href="https://Saikrishna-Achalla.github.io/teaching">
-          
-            Teaching
-          </a>
-        </li>
-        
-      </ul>
-    </nav>
-    
-
-
-
-
-<h3>👋🏻 Hi, I'm Sai!</h3>
+            <div class="social-icons">
+                <!-- Document -->
+                <div class="social-icons">
+                <!-- Document
+                <a href="http://www.columbia.edu/~zh2408/CV.pdf" target="_blank">
+                    <i class="fas fa-file-alt"></i> My Résumé
+                </a> -->
+                <!-- Github -->
+                <a href="https://github.com/Saikrishna-Achalla" target="_blank">
+                    <i class="fab fa-github"></i> My Github
+                </a>
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/saikrishna-achalla/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> My Linkedin
+                </a>
+                <!-- Twitter -->
+                <!-- <a href="https://twitter.com/ZacharyHuang12" target="_blank">
+                    <i class="fab fa-twitter"></i> Random Ideas
+                </a> -->
+            </div>
+        </div>
+        </div>
+        <div class="right-column">
+            <section id="about">
+                <h2>About Me</h2>
 <p>
-  I'm a rising senior studying computer science at UC Berkeley originally from <a href="https://en.wikipedia.org/wiki/Botswana">Botswana</a>. 
-  I'm primarily interested in distributed systems, databases and machine learning. 
+    My name is Sai and I'm a senior at UC Berkeley studying Computer Science. My interests lie in the fields of databases, distributed systems and networking.
 </p>
 
 <p>
-  On campus, I'm a 20hr TA for UC Berkeley's upper division Computer Security course - <a href="https://fa23.cs161.org/">CS 161</a>.
-  I also research Databases and Distributed Systems under Grad Student <a href="https://www.linkedin.com/in/conorpower23/">Conor Power</a>
-  and <a href="https://dsf.berkeley.edu/jmh/">Prof. Joe Hellerstein</a>
+    <b>I am actively looking for PhD positions in systems in general and full-time software engineering roles for Fall 2024!</b>
 </p>
 
-<p>
-  Apart from Teaching and doing Research, I really enjoy wildlife photography. Take a look at some photos I've taken here!
-</p>
-
-<p>
-  Please reach out if you find anything interesting! I can be reached through
-  <a href="mailto:saikrishna.achalla@berkeley.edu">email</a> or
-  <a href="https://www.linkedin.com/in/saikrishna-achalla/">LinkedIn</a>. I also have
-  some of projects publicly available on <a href="https://github.com/Saikrishna-Achalla">GitHub</a>.
-</p>
+<p></p>
 
 
+
+
+            </section>
+            <section id="publications">
+                <h2>Publications</h2>
+                <ol>
+                    <li><b>Once Upon a Tree: Distributed Idempotence in O(1) space</b>
+                        <br>C. Power, S. Laddad, C. Douglas, <u><b>S. Achalla</b></u>, L. Katahanas, J.M. Hellerstein, D. Suciu<br>
+                        <font size="2">VLDB 2024 (In review)</font>
+                    </li>
+                </ol>
+            </section>
+            <section id="teaching">
+                <h2>Teaching</h2>
+                    <ul>
+                        <li> <a href="https://www.wis.ewi.tudelft.nl/dbml2023">DBML@ICDE 2023</a> PC Member</li>
+                        <li> <a href="https://table-representation-learning.github.io/">TRL@NeurIPS 2023</a> PC Member</li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </body>
-</html>
+    </html>
+
